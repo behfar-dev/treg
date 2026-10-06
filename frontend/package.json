@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node api.js && vite",
     "build": "vue-tsc --noEmit && vite build && vite build -c vite.agent-setup.config.ts && node scripts/copy-runtime.mjs",
     "test": "vitest run",
     "check": "vue-tsc --noEmit",
